@@ -88,4 +88,8 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
     display:block!important;
     white-space:nowrap;
   }
+  #supply .detail-copy>p:not(.lead) .sp-line:nth-child(4)::after{
+    content:"";
+    display:block;
+  }
 }
