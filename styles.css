@@ -84,4 +84,8 @@ h1,h2,h3{text-wrap:balance;line-break:strict}p,li,dt,dd,figcaption{text-wrap:pre
     margin-right:auto;
   }
   .service-detail .detail-copy>p:not(.lead) .sp-line{display:inline!important}
+  #supply .detail-copy>p:not(.lead) .sp-line:last-child{
+    display:block!important;
+    white-space:nowrap;
+  }
 }
