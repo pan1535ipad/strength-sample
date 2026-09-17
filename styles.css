@@ -104,3 +104,8 @@ html{line-break:strict}
 h1,h2,h3,.lead,.catch,.copy{text-wrap:balance;overflow-wrap:normal;word-break:normal}
 p,li,dt,dd,figcaption{text-wrap:pretty;overflow-wrap:break-word;word-break:normal}
 @supports (word-break:auto-phrase){h1,h2,h3,.lead,.catch,.copy,p,li,dt,dd,figcaption{word-break:auto-phrase}}
+
+/* User-defined phrase boundaries; never split or shrink an individual unit. */
+.phrase-heading{white-space:normal!important;text-wrap:wrap!important;word-break:normal;overflow-wrap:normal;min-width:0}
+.phrase-heading>.phrase-unit{display:inline-block;white-space:nowrap!important;text-wrap:nowrap!important;word-break:normal;overflow-wrap:normal}
+.phrase-heading>wbr{display:inline}
